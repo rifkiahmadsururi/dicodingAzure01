@@ -1,6 +1,5 @@
 <?php 
 
-		try {
             $nama = $_POST['nama'];
             $alamat = $_POST['alamat'];
             $no_hp = $_POST['no_hp'];
@@ -14,10 +13,5 @@
             $stmt->execute();
 
             echo "window.location.href = 'https://azurewebaoorifki02.azurewebsites.net/';";
-
-        } catch(Exception $e) {
-            echo "Failed: " . $e;
-
-        }
 
  ?>
