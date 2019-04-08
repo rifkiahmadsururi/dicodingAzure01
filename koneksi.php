@@ -6,6 +6,7 @@
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+        echo "koneksi berhasil";
     } catch(Exception $e) {
         echo "Failed: " . $e;
     }
