@@ -23,27 +23,29 @@ include 'koneksi.php';
             $mahasiswa = $conn->query($query_mahasiswa);
             $mhs = $mahasiswa->fetchAll(); 
             if(count($mhs) > 0) {
-            	echo "<tr>";
-            		echo "<td>";
-            		echo $mhs['id'];
-            		echo "</td>";
+            	foreach($mhs as $mhss) {
+	            	echo "<tr>";
+	            		echo "<td>";
+	            		echo $mhss['id'];
+	            		echo "</td>";
 
-            		echo "<td>";
-            		echo $mhs['nama'];
-            		echo "</td>";
+	            		echo "<td>";
+	            		echo $mhss['nama'];
+	            		echo "</td>";
 
-            		echo "<td>";
-            		echo $mhs['alamat'];
-            		echo "</td>";
+	            		echo "<td>";
+	            		echo $mhss['alamat'];
+	            		echo "</td>";
 
-            		echo "<td>";
-            		echo $mhs['no_hp'];
-            		echo "</td>";
-            	echo "<tr>";
-
+	            		echo "<td>";
+	            		echo $mhss['no_hp'];
+	            		echo "</td>";
+	            	echo "<tr>";
+            	}
+            } else {
+                echo "<h3>No one is currently registered.</h3>";
             }
 		?>
-		<tr></tr>
 	</table>
 
 </body>
