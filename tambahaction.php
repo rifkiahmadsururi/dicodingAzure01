@@ -8,6 +8,7 @@
         $sql_insert = "exec sp_insertMahasiswa $nama, $alamat, $no_hp";
         $stmt = $conn->prepare($sql_insert);
         $stmt->execute();
-        echo "window.location.href = 'https://azurewebaoorifki02.azurewebsites.net/';";
    
  ?>
+
+ <a href="https://azurewebaoorifki02.azurewebsites.net"></a><button>Home</button></a>
