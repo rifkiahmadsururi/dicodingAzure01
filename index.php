@@ -17,7 +17,7 @@ include 'koneksi.php';
 	<br>
 
 	<table class="table">
-		<tr><th>ID</th><th>Nama</th><th>Alamat</th><th>No Hp</th></tr>
+		<tr><th>ID</th><th>Nama</th><th>Alamat</th><th>No Hp</th><th>Tanggal</th></tr>
 		<?php
 			$query_mahasiswa = "SELECT * FROM mahasiswa";
             $mahasiswa = $conn->query($query_mahasiswa);
@@ -39,6 +39,10 @@ include 'koneksi.php';
 
 	            		echo "<td>";
 	            		echo $mhss['no_hp'];
+	            		echo "</td>";
+
+	            		echo "<td>";
+	            		echo $mhss['tanggal'];
 	            		echo "</td>";
 	            	echo "<tr>";
             	}
