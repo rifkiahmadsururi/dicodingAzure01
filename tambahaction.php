@@ -1,5 +1,5 @@
 <?php 
-    try {
+   
         include 'koneksi.php';
         $nama = $_POST['nama'];
         $alamat = $_POST['alamat'];
@@ -9,8 +9,5 @@
         $stmt = $conn->prepare($sql_insert);
         $stmt->execute();
         echo "window.location.href = 'https://azurewebaoorifki02.azurewebsites.net/';";
-    } catch(Exception $e) {
-        echo "Failed: " . $e;
-    }
-
+   
  ?>
