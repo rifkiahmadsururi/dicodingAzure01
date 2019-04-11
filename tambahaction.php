@@ -9,3 +9,14 @@
         $stmt->execute();
    
  ?>
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ </head>
+ <body>
+ 	<br>
+ 	<a href="https://azurewebaoorifki02.azurewebsites.net/"><button>Home</button></a>
+ </body>
+ </html>
