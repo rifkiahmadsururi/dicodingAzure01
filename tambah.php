@@ -11,7 +11,7 @@
 		<table class="table">
 			<tr><td>Nama</td><td><input type="text" name="nama"></td></tr>
 			<tr><td>Alamat</td><td><input type="text" name="alamat"></td></tr>
-			<tr><td>No HP</td><td><input type="text" name="no_hp"></td></tr>
+			<tr><td>Hobi</td><td><input type="text" name="hobi"></td></tr>
 			<tr><td>Aksi</td><td><input type="submit" name="" value="Simpan Data"></td></tr>
 		</table>
 	</form>
