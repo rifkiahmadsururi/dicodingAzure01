@@ -4,7 +4,7 @@
         $nama = $_POST['nama'];
         $alamat = $_POST['alamat'];
         $hobi = $_POST['hobi'];
-        $sql_insert = "exec sp_insertMahasiswa $nama, $alamat, $hobi";
+        $sql_insert = "insert into mahasisiwa values ($nama, $alamat, $hobi)";
         $stmt = $conn->prepare($sql_insert);
         $stmt->execute();
    
