@@ -6,8 +6,12 @@
         //$hobi = $_POST['hobi'];
         //$sql_insert = "INSERT INTO mahasisiwa VALUES (nama, alamat, hobi) ($nama, $alamat, $hobi, '1999-09-27')";
         $nama = 'rifki';
-        $sql_insert = "INSERT INTO `azureSqlServerRifki01`.`mahasisiwa` VALUES (nama, alamat, hobi, tanggal) ('".$nama."', 'bandung', 'menulis', '1999-09-27')";
+        $sql_insert = "INSERT INTO mahasisiwa VALUES (nama, alamat, hobi, tanggal) (?,?,?,?)";
         $stmt = $conn->prepare($sql_insert);
+        $stmt->bindValue(1, 'rifki ahmad sururi');
+        $stmt->bindValue(2, 'Magelang');
+        $stmt->bindValue(3, 'menggambar');
+        $stmt->bindValue(4, '1997-09-27');
         $stmt->execute();
    
  ?>
